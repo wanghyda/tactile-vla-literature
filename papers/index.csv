@@ -1,0 +1,23 @@
+id,title,year,category,status,quality,verification,primary_url,code_url,local_pdf
+tactile-vla-2025,Tactile-VLA: Unlocking Vision-Language-Action Model's Physical Knowledge for Tactile Generalization,2025,direct-vla,preprint,high,verified,https://arxiv.org/abs/2507.09160,,no
+tla-2025,TLA: Tactile-Language-Action Model for Contact-Rich Manipulation,2025,direct-vla,preprint,high,verified,https://arxiv.org/abs/2503.08548,,no
+vtla-2025,VTLA: Vision-Tactile-Language-Action Model with Preference Learning for Insertion Manipulation,2025,direct-vla,preprint,high,verified,https://arxiv.org/abs/2505.09577,,no
+vla-touch-2025,VLA-Touch: Enhancing Vision-Language-Action Models with Dual-Level Tactile Feedback,2025,direct-vla,preprint,high,verified,https://arxiv.org/abs/2507.17294,https://github.com/jxbi1010/VLA-Touch,no
+omnivtla-2025,OmniVTLA: Vision-Tactile-Language-Action Models with Semantic-Aligned Tactile Sensing,2025,direct-vla,preprint,high,verified,https://arxiv.org/abs/2508.08706,,no
+retouch-2026,ReTouch: Empowering Contact-Rich Dexterous Manipulation with Online-Refined Tactile Prediction,2026,direct-vla,preprint,high,verified,https://arxiv.org/abs/2608.01824,,yes
+vitar-2026,ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation,2026,direct-vla,preprint,high,verified,https://arxiv.org/abs/2608.15816,,yes
+tacforcing-2026,TacForcing: Streaming Action Generation with Execution-Time Tactile Feedback,2026,direct-vla,preprint,high,verified,https://arxiv.org/abs/2608.25798,,yes
+n0-vtla-2026,N0-VTLA,2026,direct-vla,preprint,high,verified,https://arxiv.org/abs/2607.23782,https://github.com/neoteai/N0-VTLA,no
+sparsh-2024,Sparsh: Self-supervised Touch Representations for Vision-based Tactile Sensing,2024,representation,corl,high,verified,https://arxiv.org/abs/2410.24090,https://github.com/facebookresearch/sparsh,no
+t3-2024,Transferable Tactile Transformers for Representation Learning Across Diverse Sensors and Tasks,2024,representation,preprint,high,verified,https://arxiv.org/abs/2406.13640,https://github.com/alanzjl/t3,no
+anytouch-2025,AnyTouch: Learning Unified Static-Dynamic Representation across Multiple Visuo-tactile Sensors,2025,representation,preprint,high,verified,https://arxiv.org/abs/2502.12191,,no
+unitouch-2024,UniTouch: A Unified Representation of Touch and Vision for Robotic Manipulation,2024,representation,cvpr,high,verified,https://arxiv.org/abs/2401.18084,,no
+dextouch-2024,DexTouch: Learning to Seek and Manipulate Objects with Tactile Dexterity,2024,manipulation,preprint,high,verified,https://arxiv.org/abs/2401.12496,,no
+tactile-insertion-2024,Learning Tactile Insertion in the Real World,2024,manipulation,preprint,medium,verified,https://arxiv.org/abs/2405.00383,,no
+dexitac-2024,DexiTac,2024,manipulation,preprint,medium,verified,https://arxiv.org/abs/2405.02897,,no
+tac2motion-2025,Tac2Motion,2025,manipulation,preprint,high,verified,https://arxiv.org/abs/2509.17812,,no
+feeling-success-2017,The Feeling of Success: Does Touch Sensing Help Predict Grasp Outcomes?,2017,manipulation,corl,high,verified,https://arxiv.org/abs/1710.05512,,no
+openvla-2024,OpenVLA: An Open-Source Vision-Language-Action Model,2024,vla-foundation,corl,high,verified,https://arxiv.org/abs/2406.09246,https://github.com/openvla/openvla,no
+octo-2024,Octo: An Open-Source Generalist Robot Policy,2024,vla-foundation,rss,high,verified,https://arxiv.org/abs/2405.12213,https://github.com/octo-models/octo,no
+pi0-2024,π₀: A Vision-Language-Action Flow Model for General Robot Control,2024,vla-foundation,preprint,high,verified,https://arxiv.org/abs/2410.24164,,no
+rt2-2023,RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control,2023,vla-foundation,corl,high,verified,https://arxiv.org/abs/2307.15818,,no
