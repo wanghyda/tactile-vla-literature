@@ -64,7 +64,7 @@
 - 将执行时触觉反馈用于流式动作生成，面向低延迟闭环控制。
 - **阅读评价：** 对比 action chunking、双时间尺度控制和实时触觉注入时优先阅读。
 
-## N₀-VTLA（近邻工作，需重点区分）
+## N₀-VTLA
 
 - **N₀-VTLA**
 - NeoteAI Team / Fudan TEAI Team (2026, arXiv preprint)
