@@ -10,6 +10,7 @@ A structured bibliography for tactile sensing, visuo-tactile learning, robot fou
 - [Tactile manipulation and control](papers/tactile-manipulation.md)
 - [Robot foundation models and VLA](papers/vla-foundations.md)
 - [Datasets, benchmarks, and surveys](papers/datasets-benchmarks.md)
+- [Paper interpretations](paper-interpretations/README.md)
 - [BibTeX](sources/references.bib)
 
 Each entry contains bibliographic metadata and a primary publication link. Publication type is recorded as `conference`, `journal`, or `preprint`. Conference and journal labels follow the linked publication record.
@@ -24,7 +25,13 @@ The bibliography covers:
 - robot foundation models and generalist policies used as VLA backbones;
 - robot datasets, benchmarks, and surveys relevant to tactile manipulation.
 
+## Paper interpretations
+
+Detailed Chinese interpretations are maintained separately from the bibliography in
+[`paper-interpretations/`](paper-interpretations/README.md). Each document explains
+the paper's problem, method, innovations, improvements over prior work, experimental
+evidence, accumulated insights, limitations, and reproducibility considerations.
+
 ## Citation policy
 
 Links point to arXiv, publisher, proceedings, or official project pages. The repository stores metadata and links rather than paper PDFs.
-

@@ -1,5 +1,21 @@
 # Tactile-VLA and Multimodal Policies
 
+## Dex-X
+
+**Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Videos with Simulated Interaction**
+Ruoqu Chen, Feixiang Ruan, Liu Cao, Zihao Wang, Botian Xu, Shiqin Tong, Jiajun Liu, Mingzhi Pei, Chenyu Zhang, Wanli Xing, Kaifeng Zhang, Mengdi Xu. 2026, preprint.
+[arXiv:2609.07747](https://arxiv.org/abs/2609.07747v2) · [Project page](https://dexx-code.github.io/dexx-code/) · [Detailed interpretation](../paper-interpretations/Learning%20Visual-Tactile%20Dexterous%20Manipulation%20From%20Human%20Videos%20with%20Simulated%20Interaction.md)
+
+Uses simulation as a tactile-completion engine: human hand-object motion is reconstructed and retargeted, a tactile-aware state expert is trained with RL, and a deployable visual-tactile policy is distilled for zero-shot sim-to-real dexterous manipulation.
+
+## UniDex-ViTac
+
+**UniDex-ViTac: Learning Unified Visuo-Tactile Dexterous Manipulation Policy from Human Video Data**
+Hyesung Lee, Si-Hwan Heo, Sungwook Yang. 2026, preprint.
+[arXiv:2609.16504](https://arxiv.org/abs/2609.16504v1) · [Project page](https://unidex-vitac.github.io/) · [Detailed interpretation](../paper-interpretations/UniDex-ViTac%3A%20Learning%20Unified%20Visuo-Tactile%20Dexterous%20Manipulation%20Policy%20from%20Human%20Video%20Data.md)
+
+Trains object-specific residual RL specialists in simulation to convert DexYCB human references into robot action-contact demonstrations, then learns one reference-free ACT generalist from point clouds, proprioception, and four binary fingertip contacts.
+
 ## Tactile-VLA
 
 **Tactile-VLA: Unlocking Vision-Language-Action Model's Physical Knowledge for Tactile Generalization**
