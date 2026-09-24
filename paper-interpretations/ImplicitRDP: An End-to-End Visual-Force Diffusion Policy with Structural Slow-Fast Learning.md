@@ -8,11 +8,13 @@
 |---|---|
 | 标题 | *ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning* |
 | 作者 | Wendi Chen, Han Xue, Yi Wang, Fangyuan Zhou, Jun Lv, Yang Jin, Shirun Tang, Chuan Wen, Cewu Lu |
-| arXiv | 2512.10946；当前使用 v2 原文版本 |
+| arXiv | 2512.10946v2 |
 | 状态 | Accepted to RA-L 2026 |
 | 平台 | Flexiv Rizon 4s |
 | 传感器 | Wrist camera、6-axis end-effector F/T、joint torque sensors |
-| 主要链接 | [arXiv](https://arxiv.org/abs/2512.10946)；[HTML v2](https://arxiv.org/html/2512.10946v2)；[LaTeX 源码](https://arxiv.org/src/2512.10946)；[项目页](https://implicit-rdp.github.io/) |
+| 主要链接 | [arXiv v2](https://arxiv.org/abs/2512.10946v2)；[HTML v2](https://arxiv.org/html/2512.10946v2)；[LaTeX 源码](https://arxiv.org/src/2512.10946v2)；[项目页](https://implicit-rdp.github.io/)；[代码](https://github.com/Chen-Wendi/ImplicitRDP)；[数据集](https://huggingface.co/datasets/WendiChen/ImplicitRDP_dataset)；[模型](https://huggingface.co/WendiChen/ImplicitRDP_model) |
+
+【版本/复现说明】论文正文描述视觉编码器为 ResNet-18，但当前官方仓库训练配置使用未预训练 ResNet-34；复现时应记录具体代码 commit 和配置，而不能只依据正文一句话。
 
 ## 2. 一句话理解
 
@@ -544,7 +546,7 @@ Force-reactive policy 需要低层位置控制器精确执行 action-rate correc
 ## 18. 复现清单
 
 1. Transformer diffusion policy；
-2. ResNet-18 visual encoder；
+2. 论文正文为 ResNet-18；当前官方配置为未预训练 ResNet-34；
 3. GRU causal force encoder；
 4. action-aligned causal attention mask；
 5. deterministic DDIM \(\eta=0\)；
@@ -559,10 +561,11 @@ Force-reactive policy 需要低层位置控制器精确执行 action-rate correc
 
 ## 19. 参考来源
 
-1. [arXiv 2512.10946](https://arxiv.org/abs/2512.10946)
+1. [arXiv 2512.10946v2](https://arxiv.org/abs/2512.10946v2)
 2. [HTML v2](https://arxiv.org/html/2512.10946v2)
-3. [LaTeX 源码](https://arxiv.org/src/2512.10946)
+3. [LaTeX 源码](https://arxiv.org/src/2512.10946v2)
 4. [Method](https://arxiv.org/html/2512.10946v2#S3)
 5. [Experiments](https://arxiv.org/html/2512.10946v2#S4)
 6. [Conclusion](https://arxiv.org/html/2512.10946v2#S5)
-
+7. [Official GitHub](https://github.com/Chen-Wendi/ImplicitRDP)
+8. [Official dataset](https://huggingface.co/datasets/WendiChen/ImplicitRDP_dataset)

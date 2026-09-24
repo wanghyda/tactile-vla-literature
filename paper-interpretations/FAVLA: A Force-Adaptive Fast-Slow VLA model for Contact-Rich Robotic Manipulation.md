@@ -15,6 +15,9 @@
 | 传感器 | Wrist RGB-D cameras、external camera、6-axis end-effector F/T |
 | 主链接 | [arXiv](https://arxiv.org/abs/2602.23648)；[HTML 全文](https://arxiv.org/html/2602.23648v1)；[LaTeX 源码](https://arxiv.org/src/2602.23648v1) |
 
+截至本次整理，未确认到作者维护的 FAVLA 官方 GitHub 仓库；相关基线
+ForceVLA 的代码不能当作 FAVLA 实现。
+
 ## 2. 一句话理解
 
 FAVLA 的核心是：
@@ -313,6 +316,8 @@ FAVLA 使用：
 - 约 1.84 hours；
 - 图像和 force/action 原始采集频率 30/200 Hz，统一 downsample 到 30 Hz。
 
+【复现边界】论文动机讨论了相机与力传感器之间的高采样率差异，但公开实验流程明确写明：200 Hz 的力/力矩流在训练前与图像同步后下采样到 30 Hz。论文没有清楚说明部署时是否恢复使用原始 200 Hz 力流。因此，“高频 force”至少可以确定是**相对于慢 VLM 更新的 fast path**，不能直接表述为训练时完整保留 200 Hz 原始力信号。
+
 训练：
 
 - \(\pi_0\) 初始化；
@@ -447,6 +452,7 @@ FAVLA 不强迫视觉、语言、历史力、最新力和 proprioception 以同�
 6. paper 重点展示 success/peak force，没有充分分析 scheduler 计算开销和不同延迟下的鲁棒性；
 7. 自适应频率与 temporal ensemble 同时改变了执行机制，部分增益难完全分离；
 8. 仅凭 predicted variance 不能证明模型理解了真实接触物理。
+9. 论文没有公开完整 inference 伪代码、实际 `N_max`、未来方差权重和所有 query/latency 分布，复现需要自行补齐关键调度超参。
 
 ## 16. 论文积累的知识
 
@@ -481,4 +487,3 @@ FAVLA 不强迫视觉、语言、历史力、最新力和 proprioception 以同�
 4. [Method](https://arxiv.org/html/2602.23648v1#S3)
 5. [Experiments](https://arxiv.org/html/2602.23648v1#S4)
 6. [Conclusion](https://arxiv.org/html/2602.23648v1#S5)
-
