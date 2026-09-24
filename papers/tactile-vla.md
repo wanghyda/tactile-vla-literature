@@ -1,5 +1,13 @@
 # Tactile-VLA and Multimodal Policies
 
+## ForceDelta-VLA
+
+**ForceDelta-VLA: Distilling Force-Conditioned Action Corrections for Contact-Rich Manipulation**
+Ju Dong, Yu Fu, Jian Chen, Yimeng Liu, Haocheng Zhao, Lei Zhang, Kaixin Bai, Liding Zhang, Diwen Zheng, Alois Christian Knoll, Angela P. Schoellig, Jianwei Zhang. 2026, preprint.
+[arXiv:2609.18242](https://arxiv.org/abs/2609.18242v1) · [Detailed interpretation](../paper-interpretations/ForceDelta-VLA%3A%20Distilling%20Force-Conditioned%20Action%20Corrections%20for%20Contact-Rich%20Manipulation.md)
+
+Separates slow VLA reference-action generation from fast force and delay corrections, distilling paired force-conditioned/force-agnostic teacher differences for asynchronous contact-rich manipulation.
+
 ## Dex-X
 
 **Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Videos with Simulated Interaction**

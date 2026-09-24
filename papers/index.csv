@@ -1,5 +1,6 @@
 id,title,year,category,publication_type,primary_url,code_url
 dex-x,Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Videos with Simulated Interaction,2026,tactile-vla,preprint,https://arxiv.org/abs/2609.07747v2,
+forcedelta-vla,ForceDelta-VLA: Distilling Force-Conditioned Action Corrections for Contact-Rich Manipulation,2026,tactile-vla,preprint,https://arxiv.org/abs/2609.18242v1,
 unidex-vitac,UniDex-ViTac: Learning Unified Visuo-Tactile Dexterous Manipulation Policy from Human Video Data,2026,tactile-vla,preprint,https://arxiv.org/abs/2609.16504v1,
 tactile-vla,Tactile-VLA: Unlocking Vision-Language-Action Model's Physical Knowledge for Tactile Generalization,2025,tactile-vla,preprint,https://arxiv.org/abs/2507.09160,
 tla,TLA: Tactile-Language-Action Model for Contact-Rich Manipulation,2025,tactile-vla,preprint,https://arxiv.org/abs/2503.08548,

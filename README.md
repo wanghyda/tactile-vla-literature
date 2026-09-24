@@ -31,6 +31,8 @@ Detailed Chinese interpretations are maintained separately from the bibliography
 [`paper-interpretations/`](paper-interpretations/README.md). Each document explains
 the paper's problem, method, innovations, improvements over prior work, experimental
 evidence, accumulated insights, limitations, and reproducibility considerations.
+Every new interpretation is synchronized to that directory, its README, the relevant
+topic page, `papers/index.csv`, and `sources/references.bib` before being pushed.
 
 ## Citation policy
 
