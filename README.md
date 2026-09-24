@@ -33,6 +33,9 @@ the paper's problem, method, innovations, improvements over prior work, experime
 evidence, accumulated insights, limitations, and reproducibility considerations.
 Every new interpretation is synchronized to that directory, its README, the relevant
 topic page, `papers/index.csv`, and `sources/references.bib` before being pushed.
+The current Force-aware VLA sequence includes ForceVLA (force-aware fusion), FAVLA
+(adaptive fast-slow execution), ForceDelta-VLA (force/delay correction distillation),
+and ImplicitRDP (end-to-end causal slow-fast diffusion).
 
 ## Citation policy
 

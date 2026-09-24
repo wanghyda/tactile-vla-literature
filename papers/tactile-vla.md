@@ -8,6 +8,30 @@ Ju Dong, Yu Fu, Jian Chen, Yimeng Liu, Haocheng Zhao, Lei Zhang, Kaixin Bai, Lid
 
 Separates slow VLA reference-action generation from fast force and delay corrections, distilling paired force-conditioned/force-agnostic teacher differences for asynchronous contact-rich manipulation.
 
+## ForceVLA
+
+**ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation**
+Jiawen Yu, Hairuo Liu, Qiaojun Yu, Jieji Ren, Ce Hao, Haitong Ding, Guangyu Huang, Guofan Huang, Yan Song, Panpan Cai, Cewu Lu, Wenqiang Zhang. 2025, conference.
+[arXiv:2505.22159](https://arxiv.org/abs/2505.22159) · [Project page](https://sites.google.com/view/forcevla2025/) · [Detailed interpretation](../paper-interpretations/ForceVLA%3A%20Enhancing%20VLA%20Models%20with%20a%20Force-aware%20MoE%20for%20Contact-rich%20Manipulation.md)
+
+Treats 6-axis force/torque as a first-class VLA modality and fuses it with pretrained vision-language features through the Force-Vision-Language MoE (FVLMoE).
+
+## FAVLA
+
+**FAVLA: A Force-Adaptive Fast-Slow VLA model for Contact-Rich Robotic Manipulation**
+Yao Li, Peiyuan Tang, Wuyang Zhang, Chengyang Zhu, Yifan Duan, Weikai Shi, Xiaodong Zhang, Zijiang Yang, Jianmin Ji, Yanyong Zhang. 2026, preprint.
+[arXiv:2602.23648](https://arxiv.org/abs/2602.23648) · [Detailed interpretation](../paper-interpretations/FAVLA%3A%20A%20Force-Adaptive%20Fast-Slow%20VLA%20model%20for%20Contact-Rich%20Robotic%20Manipulation.md)
+
+Separates slow semantic VLM context from a fast force-injected action expert and adaptively changes expert execution frequency using predicted future force variance.
+
+## ImplicitRDP
+
+**ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning**
+Wendi Chen, Han Xue, Yi Wang, Fangyuan Zhou, Jun Lv, Yang Jin, Shirun Tang, Chuan Wen, Cewu Lu. 2026, journal.
+[arXiv:2512.10946](https://arxiv.org/abs/2512.10946) · [Project page](https://implicit-rdp.github.io/) · [Code](https://github.com/Chen-Wendi/ImplicitRDP) · [Detailed interpretation](../paper-interpretations/ImplicitRDP%3A%20An%20End-to-End%20Visual-Force%20Diffusion%20Policy%20with%20Structural%20Slow-Fast%20Learning.md)
+
+Builds causal action-rate force feedback into one diffusion policy using Structural Slow-Fast Learning and virtual-target-based representation regularization.
+
 ## Dex-X
 
 **Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Videos with Simulated Interaction**
