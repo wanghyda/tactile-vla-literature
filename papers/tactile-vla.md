@@ -12,7 +12,7 @@ Separates slow VLA reference-action generation from fast force and delay correct
 
 **ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation**
 Jiawen Yu, Hairuo Liu, Qiaojun Yu, Jieji Ren, Ce Hao, Haitong Ding, Guangyu Huang, Guofan Huang, Yan Song, Panpan Cai, Cewu Lu, Wenqiang Zhang. 2025, conference.
-[arXiv:2505.22159](https://arxiv.org/abs/2505.22159) · [Project page](https://sites.google.com/view/forcevla2025/) · [Detailed interpretation](../paper-interpretations/ForceVLA%3A%20Enhancing%20VLA%20Models%20with%20a%20Force-aware%20MoE%20for%20Contact-rich%20Manipulation.md)
+[arXiv:2505.22159v3](https://arxiv.org/abs/2505.22159v3) · [Project page](https://sites.google.com/view/forcevla2025/) · [Code](https://github.com/ft-robotic/ForceVLA) · [Data](https://huggingface.co/datasets/qiaojunyu/ForceVLA-real-data) · [Detailed interpretation](../paper-interpretations/ForceVLA%3A%20Enhancing%20VLA%20Models%20with%20a%20Force-aware%20MoE%20for%20Contact-rich%20Manipulation.md)
 
 Treats 6-axis force/torque as a first-class VLA modality and fuses it with pretrained vision-language features through the Force-Vision-Language MoE (FVLMoE).
 

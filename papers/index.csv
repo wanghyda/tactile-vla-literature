@@ -1,7 +1,7 @@
 id,title,year,category,publication_type,primary_url,code_url
 dex-x,Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Videos with Simulated Interaction,2026,tactile-vla,preprint,https://arxiv.org/abs/2609.07747v2,
 forcedelta-vla,ForceDelta-VLA: Distilling Force-Conditioned Action Corrections for Contact-Rich Manipulation,2026,tactile-vla,preprint,https://arxiv.org/abs/2609.18242v1,
-forcevla,ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation,2025,tactile-vla,conference,https://arxiv.org/abs/2505.22159,
+forcevla,ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation,2025,tactile-vla,conference,https://arxiv.org/abs/2505.22159v3,https://github.com/ft-robotic/ForceVLA
 favla,FAVLA: A Force-Adaptive Fast-Slow VLA model for Contact-Rich Robotic Manipulation,2026,tactile-vla,preprint,https://arxiv.org/abs/2602.23648,
 implicitrdp,ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning,2026,tactile-vla,journal,https://arxiv.org/abs/2512.10946,https://github.com/Chen-Wendi/ImplicitRDP
 unidex-vitac,UniDex-ViTac: Learning Unified Visuo-Tactile Dexterous Manipulation Policy from Human Video Data,2026,tactile-vla,preprint,https://arxiv.org/abs/2609.16504v1,

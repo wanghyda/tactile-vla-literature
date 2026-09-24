@@ -8,11 +8,13 @@
 |---|---|
 | 标题 | *ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation* |
 | 作者 | Jiawen Yu, Hairuo Liu, Qiaojun Yu, Jieji Ren, Ce Hao, Haitong Ding, Guangyu Huang, Guofan Huang, Yan Song, Panpan Cai, Cewu Lu, Wenqiang Zhang |
-| 版本 | arXiv 版本；arXiv 页面标注 NeurIPS 2025 |
-| arXiv | 2505.22159 |
+| 版本 | arXiv v3；arXiv 页面标注 NeurIPS 2025 |
+| arXiv | 2505.22159v3 |
 | 平台 | Flexiv Rizon 7-DoF arm + Dahuan adaptive gripper |
 | 传感器 | 外部/腕部 RGB-D 相机、6-axis force/torque |
-| 主要链接 | [arXiv](https://arxiv.org/abs/2505.22159)；[HTML 全文](https://arxiv.org/html/2505.22159)；[项目页](https://sites.google.com/view/forcevla2025/) |
+| 主要链接 | [arXiv v3](https://arxiv.org/abs/2505.22159v3)；[HTML v3](https://arxiv.org/html/2505.22159v3)；[LaTeX v3](https://arxiv.org/src/2505.22159v3)；[项目页](https://sites.google.com/view/forcevla2025/)；[代码](https://github.com/ft-robotic/ForceVLA)；[数据集](https://huggingface.co/datasets/qiaojunyu/ForceVLA-real-data) |
+
+【版本说明】当前 v3 正式结果使用“相对 \(\pi_0\)-based baseline 提升 23.2 个百分点”；源码中仍有旧版草稿出现 24.2%，本文采用 v3 正式摘要和正文的 23.2%。
 
 ## 2. 一句话理解
 
@@ -218,12 +220,14 @@ S_{suffix}
 
 ### 6.3 数据规模
 
-ForceVLA-Data：
+论文报告的 ForceVLA-Data：
 
 - 244 trajectories；
 - 约 140,000 synchronized timesteps；
 - 视觉、proprioception、force/torque 按时间戳同步；
 - 每个任务约 50 条 expert demonstrations。
+
+公开 Hugging Face 数据目前包含 5 个 `inputForce` 和 5 个 `noForce` 子集，共 **244 episodes、140,923 frames**；公开数据使用 LeRobot v2.1 metadata，`action` 为 7 维，带 force 的 `observation.state` 为 13 维（7 维状态 + 6 维 wrench）。这与论文的约 140,000 synchronized timesteps 一致，但具体 episode/frame 统计应以公开 metadata 为准。
 
 【技术分析】它的贡献不只是模型，还包括一个把：
 
@@ -387,12 +391,19 @@ ForceDelta-VLA 则在其上继续解决：
 9. 时间戳同步和 force 坐标转换；
 10. 与论文相同的 task-specific success criteria。
 
+### 13.1 公开实现注意事项
+
+论文 Appendix B 报告多任务约 30,000 steps、单任务约 10,000 steps；当前公开 release 配置则包含 `forcevla_lora`、50,000 train steps、batch size 4 等设置。复现时应固定具体代码 commit、checkpoint、数据子集和训练配置，不能把 release config 自动视为论文训练配置。
+
+当前公开仓库还存在需要实际运行核对的接口差异，例如示例 state 维度与实际 7+6 维 metadata 的不一致，以及 `sample_actions()` 中 prefix/force token 拼接路径的实现复杂度。建议先运行官方最小示例，再进行模型或数据修改。
+
 ## 14. 参考来源
 
-1. [arXiv 2505.22159](https://arxiv.org/abs/2505.22159)
-2. [HTML 全文](https://arxiv.org/html/2505.22159)
-3. [LaTeX 源码](https://arxiv.org/src/2505.22159)
+1. [arXiv 2505.22159v3](https://arxiv.org/abs/2505.22159v3)
+2. [HTML v3](https://arxiv.org/html/2505.22159v3)
+3. [LaTeX v3](https://arxiv.org/src/2505.22159v3)
 4. [ForceVLA project page](https://sites.google.com/view/forcevla2025/)
-5. [Method and FVLMoE](https://arxiv.org/html/2505.22159#S4)
-6. [Experiments and ablations](https://arxiv.org/html/2505.22159#S5)
-
+5. [Official code](https://github.com/ft-robotic/ForceVLA)
+6. [ForceVLA-real-data](https://huggingface.co/datasets/qiaojunyu/ForceVLA-real-data)
+7. [Method and FVLMoE](https://arxiv.org/html/2505.22159v3#S4)
+8. [Experiments and ablations](https://arxiv.org/html/2505.22159v3#S5)
